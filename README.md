@@ -1,2 +1,2 @@
 # Simplecarousel
-Simple carousel (image &amp; content)
+Simple carousel (image &amp; content) - Using jQuery
