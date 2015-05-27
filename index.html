@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>slider</title>
+        <script type="text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="carousel.js"></script>
+        <style> 
+            .title-text{
+                position : absolute;
+                font-weight: 600;
+                font-size : 14px;
+                color : white;
+                margin-top : 2px;
+                margin-left:10px;
+                text-shadow : 3px 3px 5px black;
+            }
+            .link-contents{
+                position: absolute;
+                top : 24px; 
+                width:100%;
+                padding : 9px 0px 0px 0px;
+             /* height:95%; */
+             /* background : rgba(255, 255, 255, 0.8); */
+            }
+        </style>
+        <script>
+            $(function(){
+                Simplecarousel('basicCarousel', {
+                    width: '960px',
+                    height: '640px'
+                });
+            });
+        </script>
+        
+    </head>
+    <body>
+        <!-- How to add a slider-->
+        <!--
+        <div data-value=[Slider Number] data-next=[Next Slider Number] data-image="[image url]">
+                <h4 class="title-text">Title</h4>
+                <div class="link-contents">
+                 
+                </div>
+        </div>
+        -->
+        <div class="basicCarousel">
+            <div data-value=0 data-next=1 data-image="./SliderImage/slider1.jpg">
+                <h4 class="title-text">Title 1</h4>
+                <div class="link-contents">
+                    <!-- Possible creation of content-->
+                </div>
+            </div>
+            <div  data-value=1 data-next=2 data-image="./SliderImage/slider2.jpg">
+                <h4 class="title-text">Title 2</h4>
+                <div class="link-contents">
+                    <!-- Possible creation of content-->
+                </div>
+            </div>
+            <div data-value=2 data-next=0 data-image="./SliderImage/slider3.jpg">
+                <h4 class="title-text">Title 3</h4>
+                <div class="link-contents">
+                    <!-- Possible creation of content-->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
